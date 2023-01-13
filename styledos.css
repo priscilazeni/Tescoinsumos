@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+
+    /*menu navegacion*/
+
+    header {
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(237, 235, 235);
+    }
+
+    nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav img {
+        width: 25%;
+    }
+
+    .bar-btn {
+        font-size: 25px;
+        color: cadetblue;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .fa-bars {
+        margin-left: 20px;
+    }
+
+    .fa-envelope {
+        margin-right: 5px;
+        color: black;
+    }
+
+    .fa-whatsapp {
+        margin-right: 10px;
+        color: black;
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 100px;
+        background-color: white;
+        text-align: center;
+    }
+
+    .nav-menu li {
+        display: block;
+        line-height: 50px;
+        margin: 50px 0;
+    }
+
+    .nav-menu li a {
+        color: black;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    #check {
+        display: none;
+
+    }
+
+    #check:checked~.nav-menu {
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    #check:checked~.nav-menu li {
+        display: block;
+    }
+
+    #check~ul {
+        height: 0;
+        overflow: hidden;
+    }
+
+    #check:checked~ul {
+        height: 100vh;
+    }
+
+    /*main*/
+
+    .productos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productos img {
+        width: 100%;
+        padding: 10px;
+        border-radius: 25% 10%;
+        
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: purple;
+        font-weight: bold;
+    }
+
+    h3 {
+        text-align: justify;
+        margin-top: 30px;
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    
+    /*footer*/
+
+    footer {
+        background-color: rgb(237, 235, 235);
+    }
+
+    .footer-dos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .horarios {
+        font-size: 15px;
+        align-self: center;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .medios-pago {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .medios-pago p {
+        font-size: 15px;
+        align-self: center;
+        padding: 10px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .medios-pago img {
+        width: 30%;
+        align-self: center;
+    }
+
+    .redes-sociales {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .redes-sociales p {
+        font-size: 15px;
+        padding: 10px;
+        align-self: center;
+    }
+
+    .redes-sociales img {
+        width: 20%;
+        align-self: center;
+        margin-top: 5px;
+    }
+
+    .copy {
+        text-align: center;
+        font-size: 13px;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+
+
+}

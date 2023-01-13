@@ -5,15 +5,14 @@
 }
 
 body {
-    font-family: verdana;
-    background-image: url(./multimedia/logo.png);
-    background-repeat: no-repeat;
+    font-family: Roboto;
+    font-weight: bold;
 }
 
 header {
     width: 100%;
-    height: 20vh;
-    background-color: cadetblue;
+    height: 15vh;
+    background-color:rgb(237, 235, 235);
 }
 
 nav {
@@ -21,17 +20,31 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+header nav img {
+    width: 15%;
 }
 
 .bar-btn {
     font-size: 25px;
-    color: white;
+    color:cadetblue;
     margin-right: 20px;
     cursor: pointer;
 }
 
-.fa-solid {
+.fa-bars {
     margin-left: 20px;
+}
+
+.fa-envelope {
+    margin-right: 5px;
+    color: black;
+}
+
+.fa-whatsapp {
+    margin-right: 10px;
 }
 
 .nav-menu {
@@ -41,14 +54,12 @@ nav {
     top: 100px;
     background-color: white;
     text-align: center;
-    transition: all .5s;
 }
 
 .nav-menu li {
     display: block;
     line-height: 50px;
     margin: 50px 0;
-    transition: all .5s;
 }
 
 .nav-menu li a {
@@ -59,19 +70,88 @@ nav {
     text-decoration: none;
 }
 
-.nav-menu li a.active, .nav-menu li a:hover {
-    color: burlywood;
-    transition: .3s;
+.nav-menu li, .nav-menu li a:hover {
+    color:cadetblue;
 } 
 
 #check {
     display: none;
+    
 }
 
 #check:checked ~ .nav-menu {
     height: 100vh;
+    transition: 0.5s;
 }
 
 #check:checked ~ .nav-menu li {
     display: block;
+}
+
+#check ~ ul {
+    height: 0;
+    overflow: hidden;
+}
+
+#check:checked ~ ul {
+    height: 100vh;
+}
+
+footer {
+    background-color: rgb(237, 235, 235);
+}
+
+.footer-dos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.horarios {
+    font-size: 15px;
+    align-self: center;
+    line-height: 30px;
+}
+
+.medios-pago {
+    display: flex;
+}
+
+.medios-pago p {
+    font-size: 15px;
+    align-self: center;
+    padding: 10px;
+}
+
+.medios-pago img {
+    width: 15%;
+    align-self: center;
+}
+
+.redes-sociales {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales p {
+    font-size: 15px;
+    padding: 10px;
+    align-self: center;
+}
+
+.redes-sociales img {
+    width: 10%;
+    margin-left: 5px;
+    align-self: center;
+}
+
+.copy {
+    text-align: center;
+    font-size: 13px;
+    height: 30px;
 }
